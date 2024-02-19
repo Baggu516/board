@@ -3,6 +3,9 @@ const schemaa = mongoose.Schema({
         heading: {
           type: String,
         },
+        color:{
+          type:String
+        },
         items: {
           type: [String],
           required: false,

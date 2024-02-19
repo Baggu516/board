@@ -3,7 +3,7 @@ const todo=require("../modals/todo.js")
 const AddCard = async (req, res) => {
   
   try {
-    let {heading}=req.body
+    let {heading,color}=req.body
     console.log(heading,"headdddddddddd")
     let exist=await todo.create(req.body)
     if(exist != null){
